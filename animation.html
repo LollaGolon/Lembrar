@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>animation </title>
+
+<style> 
+.linHa{
+    display: inline-block;
+}
+
+
+.linHa {
+  background-color: white; 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.linHa {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.myDiv {
+  width: 200px;
+  height: 200px;
+  background: red;
+  position: relative;
+  animation: myfirst 5s 2;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  100%   {background: red; left: 100px; top: 50px;}
+  25%  {background: yellow; left: 200px; top: 50px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
+</style>
+
+
+</head>
+<body>
+
+<h1>Animação</h1>
+<p> Animação refere-se ao processo, segundo o qual cada fotograma de um filme é produzido individualmente, podendo ser gerado tanto por computação gráfica quanto fotografando uma imagem desenhada ou repetidamente, fazendo-se pequenas mudanças a um modelo, fotografando o resultado.</p>
+
+
+    
+<img src="cat.jpg" alt="esboço" width="500" height="500">
+
+<div class="linHa">
+
+
+<div class="myDiv"></div>
+
+</div>
+
+
+</body>
+</html>
